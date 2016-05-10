@@ -37,6 +37,11 @@ gem 'rails_12factor', group: :production
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'sprockets', '2.11.0'
 
+gem "kaminari"
+
+gem "bootstrap-kaminari-views"
+gem "activeadmin", git: "https://github.com/gregbell/active_admin"
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
