@@ -1,4 +1,9 @@
- <%= paginate @places, :theme => 'my_custom_theme' %>
+
+<br class="clear" />
+<div class="text-center">
+ <%= paginate @places %>
+</div>
+<br class="clear">
 
 <% @places.each do |place| %>
 
@@ -10,6 +15,7 @@
    
   </div>
  
+
 
 
 <% end %>
