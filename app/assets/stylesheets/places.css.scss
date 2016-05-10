@@ -19,7 +19,9 @@ h1, h2, h3, h4, h5, h6 {
   padding:0;
 }
 
-body {background:url('/assets/halftone/halftone.png');}
+body {background:url('/assets/halftone/halftone.png');
+
+}
 
 .navbar.navbar-inverse {
   background:url('/assets/grey/grey_wash_wall.png');
@@ -30,6 +32,8 @@ body {background:url('/assets/halftone/halftone.png');}
 
                 }
 
-.navbar-brand { 
-
-  color:white; }
+.navbar-inverse .navbar-brand {
+  color:#FFFFFF;
+   font-family: 'capture_it_2regular';
+  font-size:26px;
+}
