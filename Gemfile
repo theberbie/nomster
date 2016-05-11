@@ -42,6 +42,7 @@ gem "kaminari"
 gem "bootstrap-kaminari-views"
 gem "activeadmin", git: "https://github.com/gregbell/active_admin"
 
+gem 'simple_form'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
