@@ -84,6 +84,8 @@
 <div class="clear"></div>
 
 
+
+
 <% @place.comments.each do |comment| %>
   <div class="col-xs-12 col-sm-6">
     <blockquote>
@@ -96,6 +98,17 @@
   </div>
 <% end %>
 
+  <div class="booyah-box col-xs-10 col-xs-offset-1">
+  <%= simple_form_for @photo,  url: place_photos_path(@place)  do |p| %>
+  <%= p.input :picture %>
+  <%=p.input :caption %>
+  <br />
+  <%= p.submit 'Add Photo', class:'btn btn-primary' %>
+  
+  <%end%>
+
+
+  </div>
 
 
 

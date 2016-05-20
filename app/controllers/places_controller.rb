@@ -4,6 +4,7 @@ class PlacesController < ApplicationController
 
   def index
     @places = Place.all.page(params[:page]).per(5)
+    
   end
 
   def new
@@ -13,6 +14,7 @@ class PlacesController < ApplicationController
   def show
     @place = Place.find(params[:id])
     @comment = Comment.new
+    @photo = Photo.new
   end
 
   def create 
