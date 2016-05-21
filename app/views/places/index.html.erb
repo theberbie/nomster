@@ -17,9 +17,7 @@
       <small><%= place.user.email %></small>
     <% end %>
    
-  </div>
-
-
+  
 <% if place.comments.present? %>
 <div class="col-xs-12">
   <blockquote>
@@ -32,11 +30,13 @@
 </div>
 <%end%>
 
+<% if place.photos.present? %>
+<div class="col-xs-12 col-sm-6">
+<%= image_tag(place.photos.last.picture, class:"img-responsive") %>
+</div>
+<%end%>
+</div>
 <% end %>
-
-
-  <% @place.photos.each do |p| %>
-  <%= image_tag p.picture %>
-  <%= p.caption %>
-
-  <% end %>
+ </div>
+  
+  
