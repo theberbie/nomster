@@ -9,6 +9,5 @@ class CreatePhotos < ActiveRecord::Migration
 
       
     end
-    add_columnn  :photos, :picture, :string
-  end
+   
 end
