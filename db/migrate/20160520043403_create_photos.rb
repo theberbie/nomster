@@ -6,7 +6,7 @@ class CreatePhotos < ActiveRecord::Migration
       t.integer :user_id
       t.integer :place_id
       t.string :attachment
-
+      end
       
     end
    
