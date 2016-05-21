@@ -44,3 +44,4 @@ Nomster::Application.configure do
  # }
 
 #
+end
