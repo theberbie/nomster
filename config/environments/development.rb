@@ -42,5 +42,5 @@ Nomster::Application.configure do
     user_name: ENV['GMAIL_ADDRESS'],
     password: ENV['GMAIL_PASSWORD']
   }
-  config.action_mailer.raise_delivery_errors = false.
+  
 end
