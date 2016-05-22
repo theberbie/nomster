@@ -11,3 +11,22 @@
 </div>
 <div class="clear"></div>
 </div>
+
+<br /><br />
+<h1 class="text-center">My Comments</h1>
+<br /><br />
+
+<% @user.comments.each do |c| %>
+
+  <div class="col-xs-12 col-sm-6">
+   <h2 class="text-center"><%= link_to c.place.name, place_path(c.place) %></h2>
+    <blockquote>
+      <% if c.humanized_rating.present? %>
+        <b><%= c.humanized_rating %></b> -
+      <% end %>
+      <%= c.message %>
+      <small><%= c.user.email %></small>
+    </blockquote>
+  </div>
+
+  <% end %>
