@@ -1,5 +1,5 @@
 class Place < ActiveRecord::Base
-	paginates_per 50
+	paginates_per 10
 
   belongs_to :user
   has_many :comments
