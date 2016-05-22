@@ -5,6 +5,7 @@
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
   background: #fff;
   border: 1px solid #ccc;
@@ -80,7 +81,7 @@ blockquote p {
 .photoh1, .caption{
   text-align:center;
 
-}
+} 
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     height: 550px;
@@ -88,7 +89,7 @@ blockquote p {
 }
 
 .carousel-caption {
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
     font-size: 60px;
     font-weight:100;
     text-shadow:  rgba(0,0,0,0.95) 2px 2px;
@@ -103,3 +104,8 @@ blockquote p {
 }
 
 
+
+::selection {
+  background-color:#FDA0A0;
+
+}

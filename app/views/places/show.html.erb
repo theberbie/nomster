@@ -34,18 +34,22 @@
 
   <div class="pull-right">
 <% if current_user && current_user == @place.user %>
-<%= link_to "Edit", edit_place_path, class:"btn btn-primary" %>
+<%= link_to "Edit", edit_place_path, class:"btn btn-primary glyphicon glyphicon-file" %>
 
-<%= link_to "Delete", place_path(@place), method: :delete, data: {confirm: 'Are you sure you want to delete this?'}, class: 'btn btn-danger' %>
+<%= link_to "Delete", place_path(@place), method: :delete, data: {confirm: 'Are you sure you want to delete this?'}, class: 'btn btn-danger glyphicon glyphicon-trash' %>
+
 <% end %>
 
  <!-- Button trigger modal -->
-  <button class="btn btn-primary btn-md pull-right" data-toggle="modal" data-target="#myphotoModal">
+  <button class="btn btn-success btn-md pull-right" data-toggle="modal" data-target="#myphotoModal">
+  <span class="glyphicon glyphicon-camera"> </span>
     Add a photo
+
   </button>
   <br />
   <br />
-  <button class="btn btn-primary btn-md pull-right" data-toggle="modal" data-target="#myModal">
+  <button class="btn btn-info btn-md pull-right" data-toggle="modal" data-target="#myModal">
+  <span class="glyphicon glyphicon-plus-sign"> </span>
     Add a comment
   </button>
   <br />
