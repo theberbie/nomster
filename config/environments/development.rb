@@ -5,7 +5,7 @@ Nomster::Application.configure do
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
   config.action_mailer.default_url_options = { host: 'localhost:3030' }
-  config.action_mailer.default_url_options = { host: 'nomster-sara-ahbabou.herokuapp.com/' }
+ # config.action_mailer.default_url_options = { host: 'nomster-sara-ahbabou.herokuapp.com/' }
 
 
   config.cache_classes = false
