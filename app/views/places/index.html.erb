@@ -16,7 +16,7 @@
 <% if place.user.present? %>
       <small><%= place.user.email %></small>
     <% end %>
-   
+  
   
 <% if place.comments.present? %>
 <div class="col-xs-12">
@@ -30,11 +30,13 @@
 </div>
 <%end%>
 
+
 <% if place.photos.present? %>
 <div class="col-xs-12 col-sm-6">
 <%= image_tag(place.photos.last.picture, class:"img-responsive") %>
 </div>
 <%end%>
+</div>
 </div>
 <% end %>
  </div>
